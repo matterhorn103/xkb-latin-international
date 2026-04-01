@@ -26,25 +26,25 @@ xkb_symbols "latin-intl-a" {
     key <AD02>	{[                w,               W,           dead_tilde,         dead_belowtilde,           rightarrow,       leftarrow ]};
     key <AD03>	{[                e,               E,     dead_doubleacute,        dead_doublegrave,                schwa,           SCHWA ]};
     key <AD04>	{[                r,               R,           dead_acute,                     any,                U027C,      registered ]}; // L5: U+027C ɼ LATIN SMALL LETTER R WITH LONG LEG
-    key <AD05>	{[                t,               T,          dead_macron,           dead_overline,                thorn,           THORN ]};
+    key <AD05>	{[                t,               T,          dead_macron, dead_longsolidusoverlay,                thorn,           THORN ]};
     key <AD06>	{[                y,               Y,           dead_caron,                     any,                U2198,           U2197 ]}; // L5: U+2198 ↘ SOUTH EAST ARROW, L6: U+2197 ↗ NORTH EAST ARROW
     key <AD07>	{[                u,               U,           dead_breve,      dead_invertedbreve,            downarrow,         uparrow ]};
     key <AD08>	{[                i,               I,        dead_abovedot,  dead_aboveverticalline,             idotless,       trademark ]};
     key <AD09>	{[                o,               O,       dead_abovering,          dead_belowring,               oslash,          Oslash ]};
     key <AD10>	{[                p,               P,       dead_diaeresis,      dead_belowdiaresis,                U02B9,           U02BA ]}; // L5/L6: U+02B9/02BA MODIFIER LETTER PRIME/DOUBLE PRIME
     key <AD11>	{[      bracketleft,       braceleft,            dead_hook, dead_abovereversedcomma,                U02C8,           U02BF ]}; // L5: U+02C8 MODIFIER LETTER VERTICAL LINE, L6: U+02BF MODIFIER LETTER LEFT HALF RING
-    key <AD12>	{[     bracketright,      braceright,            dead_horn,    dead_aboverightcomma,                U02CC,           U02BE ]}; // L5: U+02CC MODIFIER LETTER LOW VERTICAL LINE, L6: U+02BE MODIFIER LETTER RIGHT HALF RING
+    key <AD12>	{[     bracketright,      braceright,            dead_horn,                   U0315,                U02CC,           U02BE ]}; // L5: U+02CC MODIFIER LETTER LOW VERTICAL LINE, L6: U+02BE MODIFIER LETTER RIGHT HALF RING
     key <BKSL>	{[        backslash,             bar,             ellipsis,                     any,                U200C,       brokenbar ]}; // L5: U+200C ZERO WIDTH NON-JOINER
 
     key <AC01>	{[                a,               A,               degree,                     any,                   ae,              AE ]};
     key <AC02>	{[                s,               S,              minutes,                     any,               ssharp,           U1E9E ]}; // L3: U+2032 PRIME, L6: U+1E9E ẞ LATIN CAPITAL LETTER SHARP S
     key <AC03>	{[                d,               D,              seconds,                     any,                  eth,             ETH ]}; // L3: U+2033 DOUBLE PRIME
     key <AC04>	{[                f,               F,     ISO_Level5_Latch,                     any,                U2042,           U2041 ]}; // L5/L6: U+0242/0241 ɂ/Ɂ LATIN SMALL/CAPITAL LETTER GLOTTAL STOP
-    key <AC05>	{[                g,               G,             dead_ipa,                     any,                U017F,           U2211 ]}; // L5: U+017F ſ LATIN SMALL LETTER LONG S, L6: U+2211 ∑ N-ARY SUMMATION
-    key <AC06>	{[                h,               H,        dead_crossbar,                     any,                U02BB,           U02BC ]}; // L5: U+02BB MODIFIER LETTER TURNED COMMA, L6: U+02BC MODIFIER LETTER APOSTROPHE
+    key <AC05>	{[                g,               G,                  any,                     any,                U017F,           U2211 ]}; // L5: U+017F ſ LATIN SMALL LETTER LONG S, L6: U+2211 ∑ N-ARY SUMMATION
+    key <AC06>	{[                h,               H,          dead_stroke,                     any,                U02BB,           U02BC ]}; // L5: U+02BB MODIFIER LETTER TURNED COMMA, L6: U+02BC MODIFIER LETTER APOSTROPHE
     key <AC07>	{[                j,               J,         dead_cedilla,                     any,                U01C0,           U01C1 ]}; // L5/L6: U+01C0/01C1 ǀ/ǁ LATIN LETTER DENTAL/LATERAL CLICK
     key <AC08>	{[                k,               K,      dead_belowcomma,         dead_abovecomma,                U01C2,           U01C3 ]}; // L5/L6: U+01C2/01C3 ǂ/ǃ LATIN LETTER ALVEOLAR/RETROFLEX CLICK
-    key <AC09>	{[                l,               L,          dead_ogonek,      dead_belowopenmark,              lstroke,         Lstroke ]};
+    key <AC09>	{[                l,               L,          dead_ogonek,                   U1AB7,              lstroke,         Lstroke ]};
     key <AC10>	{[        semicolon,           colon,        dead_belowdot,  dead_belowverticalline,          ordfeminine,           U035C ]}; // L5: U+00AA FEMININE ORDINAL INDICATOR, L6: U+035C COMBINING DOUBLE BREVE BELOW
     key <AC11>	{[       apostrophe,        quotedbl,     dead_belowmacron,            dead_lowline,         ordmasculine,           U035F ]}; // L5: U+00BA MASCULINE ORDINAL INDICATOR, L6: U+035F COMBINING DOUBLE MACRON BELOW
 
@@ -60,6 +60,10 @@ xkb_symbols "latin-intl-a" {
     key <AB10>	{[            slash,        question,         questiondown,                     any,                U2022,           U25E6 ]}; // L5: U+2022 • BULLET, L6: U+25E6 ◦ WHITE BULLET
 
     // Need to define: dead_ipa, dead_crossbar, dead_overline, dead_aboverightcomma, dead_belowopenmark
-    // Not sure about: dead_hamza, dead_crossbar as opposed to dead_stroke,
-    //                 dead_overline as opposed to dead_longsolidusoverlay,
+    // For now use: dead_ipa -> any,
+    //              dead_crossbar -> dead_stroke,
+    //              dead_overline -> dead_longsolidusoverlay,
+    //              dead_aboverightcomma -> U0315,
+    //              dead_belowopenmark -> U1AB7
+    // Not sure about dead_hamza
 };
