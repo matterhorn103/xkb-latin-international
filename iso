@@ -1,65 +1,65 @@
 // Keyboard layouts defined in ISO/IEC 9995.
 
 default
-xkb_symbols "a" {
+xkb_symbols "latin-intl-a" {
     // Latin International keyboard layout for key arrangement ISO A (ANSI)
     // See https://en.wikipedia.org/wiki/Latin_International_keyboard_layout
 
     name[Group1]="Latin International-A";
     key.type[Group1] = "EIGHT_LEVEL";
 
-    key <AE00>	{[            grave,      asciitilde,           dead_grave,                     any,          Greek_pi,             any ]};
-    key <AE01>	{[                1,          exclam,           exclamdown,                     any,        onequarter,             any ]};
-    key <AE02>	{[                2,              at,                  yen,                     any,           onehalf,             any ]};
-    key <AE03>	{[                3,      numbersign,             sterling,                     any,     threequarters,             any ]};
-    key <AE04>	{[                4,          dollar,        dead_currency,                     any,              cent,           U0361 ]}; // L6: U+0361 COMBINING DOUBLE INVERTED BREVE
-    key <AE05>	{[                5,         percent,             EuroSign,                     any,          permille,             any ]};
-    key <AE06>	{[                6,     asciicircum,      dead_circumflex,    dead_belowcircumflex,           section,       paragraph ]}; // L5: U+00A7 SECTION SIGN, L6: U+00B6 PILCROW SIGN
-    key <AE07>	{[                7,       ampersand,                  "⌀",                     any,           notsign,            TODO ]}; // L3: U+2300 DIAMETER SIGN
-    key <AE08>	{[                8,        asterisk,             multiply,                     any,            dagger,    doubledagger ]};
-    key <AE09>	{[                9,       parenleft,                U202F,                     any,  leftanglebracket,           U300A ]}; // L3: U+202F NARROW NO-BREAK SPACE, L6: U+300A LEFT DOUBLE ANGLE BRACKET
-    key <AE10>	{[                0,      parenright,                U2011,                     any, rightanglebracket,           U300B ]}; // L3: U+2011 NON-BREAKING HYPHEN, L6: U+300B RIGHT DOUBLE ANGLE BRACKET
-    key <AE11>	{[            minus,      underscore,                U00AD,              dead_hamza,          division,            TODO ]}; // L3: U+00AD SOFT HYPHEN
-    key <AE12>	{[            equal,            plus,                  "−",                     any,          notequal,       plusminus ]}; // L3: U+2212 MINUS SIGN
+    key <AE00>	{[            grave,      asciitilde,           dead_grave,                     any,             Greek_pi,             any ]}; // Should L6 be capital pi, or perhaps U+220F N_ARY PRODUCT to match summation on g?
+    key <AE01>	{[                1,          exclam,           exclamdown,                     any,           onequarter,             any ]};
+    key <AE02>	{[                2,              at,                  yen,                     any,              onehalf,             any ]};
+    key <AE03>	{[                3,      numbersign,             sterling,                     any,        threequarters,             any ]};
+    key <AE04>	{[                4,          dollar,        dead_currency,                     any,                 cent,           U0361 ]}; // L6: U+0361 COMBINING DOUBLE INVERTED BREVE
+    key <AE05>	{[                5,         percent,             EuroSign,                     any,             permille,             any ]};
+    key <AE06>	{[                6,     asciicircum,      dead_circumflex,    dead_belowcircumflex,              section,       paragraph ]}; // L5: U+00A7 SECTION SIGN, L6: U+00B6 PILCROW SIGN
+    key <AE07>	{[                7,       ampersand,                U2300,                     any,              notsign,           U204A ]}; // L3: U+2300 ⌀ DIAMETER SIGN, L6: U+204A ⁊ TIRONIAN SIGN ET
+    key <AE08>	{[                8,        asterisk,             multiply,                     any,               dagger,    doubledagger ]};
+    key <AE09>	{[                9,       parenleft,                U202F,                     any,     leftanglebracket,           U300A ]}; // L3: U+202F NARROW NO-BREAK SPACE, L6: U+300A LEFT DOUBLE ANGLE BRACKET
+    key <AE10>	{[                0,      parenright,                U2011,                     any,    rightanglebracket,           U300B ]}; // L3: U+2011 NON-BREAKING HYPHEN, L6: U+300B RIGHT DOUBLE ANGLE BRACKET
+    key <AE11>	{[            minus,      underscore,                U00AD,              dead_hamza,             division,           U203B ]}; // L3: U+00AD SOFT HYPHEN, L6: U+203B ※ REFERENCE MARK
+    key <AE12>	{[            equal,            plus,                U2212,                     any,             notequal,       plusminus ]}; // L3: U+2212 − MINUS SIGN
 
-    key <AD01>	{[                q,               Q,            Multi_key,                     any,                oe,              OE ]};
-    key <AD02>	{[                w,               W,           dead_tilde,         dead_belowtilde,        rightarrow,       leftarrow ]};
-    key <AD03>	{[                e,               E,     dead_doubleacute,        dead_doublegrave,             schwa,           SCHWA ]};
-    key <AD04>	{[                r,               R,           dead_acute,                     any,              TODO,      registered ]};
-    key <AD05>	{[                t,               T,          dead_macron,           dead_overline,             thorn,           THORN ]};
-    key <AD06>	{[                y,               Y,           dead_caron,                     any,               "↘",             "↗" ]};
-    key <AD07>	{[                u,               U,           dead_breve,      dead_invertedbreve,         downarrow,         uparrow ]};
-    key <AD08>	{[                i,               I,        dead_abovedot,  dead_aboveverticalline,          idotless,       trademark ]};
-    key <AD09>	{[                o,               O,       dead_abovering,          dead_belowring,            oslash,          Oslash ]};
-    key <AD10>	{[                p,               P,       dead_diaeresis,      dead_belowdiaresis,              TODO,            TODO ]};
-    key <AD11>	{[      bracketleft,       braceleft,            dead_hook, dead_abovereversedcomma,              TODO,            TODO ]};
-    key <AD12>	{[     bracketright,      braceright,            dead_horn,    dead_aboverightcomma,              TODO,            TODO ]};
-    key <BKSL>	{[        backslash,             bar,             ellipsis,                     any,              TODO,            TODO ]};
+    key <AD01>	{[                q,               Q,            Multi_key,                     any,                   oe,              OE ]}; // Group switch will probably be used rather than Multi_key
+    key <AD02>	{[                w,               W,           dead_tilde,         dead_belowtilde,           rightarrow,       leftarrow ]};
+    key <AD03>	{[                e,               E,     dead_doubleacute,        dead_doublegrave,                schwa,           SCHWA ]};
+    key <AD04>	{[                r,               R,           dead_acute,                     any,                U027C,      registered ]}; // L5: U+027C ɼ LATIN SMALL LETTER R WITH LONG LEG
+    key <AD05>	{[                t,               T,          dead_macron,           dead_overline,                thorn,           THORN ]};
+    key <AD06>	{[                y,               Y,           dead_caron,                     any,                U2198,           U2197 ]}; // L5: U+2198 ↘ SOUTH EAST ARROW, L6: U+2197 ↗ NORTH EAST ARROW
+    key <AD07>	{[                u,               U,           dead_breve,      dead_invertedbreve,            downarrow,         uparrow ]};
+    key <AD08>	{[                i,               I,        dead_abovedot,  dead_aboveverticalline,             idotless,       trademark ]};
+    key <AD09>	{[                o,               O,       dead_abovering,          dead_belowring,               oslash,          Oslash ]};
+    key <AD10>	{[                p,               P,       dead_diaeresis,      dead_belowdiaresis,                U02B9,           U02BA ]}; // L5/L6: U+02B9/02BA MODIFIER LETTER PRIME/DOUBLE PRIME
+    key <AD11>	{[      bracketleft,       braceleft,            dead_hook, dead_abovereversedcomma,                U02C8,           U02BF ]}; // L5: U+02C8 MODIFIER LETTER VERTICAL LINE, L6: U+02BF MODIFIER LETTER LEFT HALF RING
+    key <AD12>	{[     bracketright,      braceright,            dead_horn,    dead_aboverightcomma,                U02CC,           U02BE ]}; // L5: U+02CC MODIFIER LETTER LOW VERTICAL LINE, L6: U+02BE MODIFIER LETTER RIGHT HALF RING
+    key <BKSL>	{[        backslash,             bar,             ellipsis,                     any,                U200C,       brokenbar ]}; // L5: U+200C ZERO WIDTH NON-JOINER
 
-    key <AC01>	{[                a,               A,               degree,                     any,                ae,              AE ]};
-    key <AC02>	{[                s,               S,              minutes,                     any,            ssharp,             "ẞ" ]}; // L3: U+2032 PRIME
-    key <AC03>	{[                d,               D,              seconds,                     any,              TODO,            TODO ]}; // L3: U+2033 DOUBLE PRIME
-    key <AC04>	{[                f,               F,     ISO_Level5_Latch,                     any,              TODO,            TODO ]};
-    key <AC05>	{[                g,               G,             dead_ipa,                     any,              TODO,            TODO ]};
-    key <AC06>	{[                h,               H,        dead_crossbar,                     any,              TODO,            TODO ]};
-    key <AC07>	{[                j,               J,         dead_cedilla,                     any,              TODO,            TODO ]};
-    key <AC08>	{[                k,               K,      dead_belowcomma,         dead_abovecomma,              TODO,            TODO ]};
-    key <AC09>	{[                l,               L,          dead_ogonek,      dead_belowopenmark,              TODO,            TODO ]};
-    key <AC10>	{[        semicolon,           colon,        dead_belowdot,  dead_belowverticalline,              TODO,            TODO ]};
-    key <AC11>	{[       apostrophe,        quotedbl,     dead_belowmacron,            dead_lowline,              TODO,            TODO ]};
+    key <AC01>	{[                a,               A,               degree,                     any,                   ae,              AE ]};
+    key <AC02>	{[                s,               S,              minutes,                     any,               ssharp,           U1E9E ]}; // L3: U+2032 PRIME, L6: U+1E9E ẞ LATIN CAPITAL LETTER SHARP S
+    key <AC03>	{[                d,               D,              seconds,                     any,                  eth,             ETH ]}; // L3: U+2033 DOUBLE PRIME
+    key <AC04>	{[                f,               F,     ISO_Level5_Latch,                     any,                U2042,           U2041 ]}; // L5/L6: U+0242/0241 ɂ/Ɂ LATIN SMALL/CAPITAL LETTER GLOTTAL STOP
+    key <AC05>	{[                g,               G,             dead_ipa,                     any,                U017F,           U2211 ]}; // L5: U+017F ſ LATIN SMALL LETTER LONG S, L6: U+2211 ∑ N-ARY SUMMATION
+    key <AC06>	{[                h,               H,        dead_crossbar,                     any,                U02BB,           U02BC ]}; // L5: U+02BB MODIFIER LETTER TURNED COMMA, L6: U+02BC MODIFIER LETTER APOSTROPHE
+    key <AC07>	{[                j,               J,         dead_cedilla,                     any,                U01C0,           U01C1 ]}; // L5/L6: U+01C0/01C1 ǀ/ǁ LATIN LETTER DENTAL/LATERAL CLICK
+    key <AC08>	{[                k,               K,      dead_belowcomma,         dead_abovecomma,                U01C2,           U01C3 ]}; // L5/L6: U+01C2/01C3 ǂ/ǃ LATIN LETTER ALVEOLAR/RETROFLEX CLICK
+    key <AC09>	{[                l,               L,          dead_ogonek,      dead_belowopenmark,              lstroke,         Lstroke ]};
+    key <AC10>	{[        semicolon,           colon,        dead_belowdot,  dead_belowverticalline,          ordfeminine,           U035C ]}; // L5: U+00AA FEMININE ORDINAL INDICATOR, L6: U+035C COMBINING DOUBLE BREVE BELOW
+    key <AC11>	{[       apostrophe,        quotedbl,     dead_belowmacron,            dead_lowline,         ordmasculine,           U035F ]}; // L5: U+00BA MASCULINE ORDINAL INDICATOR, L6: U+035F COMBINING DOUBLE MACRON BELOW
 
-    key <AB01>	{[                z,               Z,        guillemetleft,                     any,              TODO,            TODO ]};
-    key <AB02>	{[                x,               X,       guillemetright,                     any,              TODO,            TODO ]};
-    key <AB03>	{[                c,               C,   doublelowquotemark,                     any,              TODO,            TODO ]};
-    key <AB04>	{[                v,               V,  leftdoublequotemark,                     any,              TODO,            TODO ]};
-    key <AB05>	{[                b,               B, rightdoublequotemark,                     any,              TODO,            TODO ]};
-    key <AB06>	{[                n,               N,               endash,                     any,              TODO,            TODO ]};
-    key <AB07>	{[                m,               M,               emdash,                     any,              TODO,            TODO ]};
-    key <AB08>	{[            comma,            less,           apostrophe,                     any,              TODO,            TODO ]};
-    key <AB09>	{[           period,         greater,       periodcentered,                     any,              TODO,            TODO ]}; // L3: U+00B7 MIDDLE DOT
-    key <AB10>	{[            slash,        question,         questiondown,                     any,              TODO,            TODO ]};
+    key <AB01>	{[                z,               Z,        guillemetleft,                     any,                  ezh,             EZH ]};
+    key <AB02>	{[                x,               X,       guillemetright,                     any,            checkmark,     ballotcross ]};
+    key <AB03>	{[                c,               C,   doublelowquotemark,                     any,   singlelowquotemark,       copyright ]};
+    key <AB04>	{[                v,               V,  leftdoublequotemark,                     any,  leftsinglequotemark,           U2039 ]}; // L6: U+2039 ‹ SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+    key <AB05>	{[                b,               B, rightdoublequotemark,                     any, rightsinglequotemark,           U203A ]}; // L6: U+203A › SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+    key <AB06>	{[                n,               N,               endash,                     any,                U019E,           U0220 ]}; // L5/L6: U+019E/0220 ƞ/Ƞ LATIN SMALL/CAPITAL LETTER N WITH LONG RIGHT LEG
+    key <AB07>	{[                m,               M,               emdash,                     any,             Greek_mu,     Greek_OMEGA ]}; // The Greek letters are to be preferred to U+00B5 MICRO SIGN and U+2126 OHM SIGN https://www.unicode.org/reports/tr25/
+    key <AB08>	{[            comma,            less,           apostrophe,                     any,        lessthanequal,             any ]};
+    key <AB09>	{[           period,         greater,       periodcentered,                     any,     greaterthanequal,             any ]}; // L3: U+00B7 · MIDDLE DOT
+    key <AB10>	{[            slash,        question,         questiondown,                     any,                U2022,           U25E6 ]}; // L5: U+2022 • BULLET, L6: U+25E6 ◦ WHITE BULLET
 
     // Need to define: dead_ipa, dead_crossbar, dead_overline, dead_aboverightcomma, dead_belowopenmark
     // Not sure about: dead_hamza, dead_crossbar as opposed to dead_stroke,
-    //                 dead_overline as opposed to dead_longsolidusoverlay
+    //                 dead_overline as opposed to dead_longsolidusoverlay,
 };
