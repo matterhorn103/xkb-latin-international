@@ -40,11 +40,11 @@ xkb_symbols "latin-intl-a" {
     key <AC02>	{[                s,               S,              minutes,                     any,               ssharp,           U1E9E ]}; // L3: U+2032 PRIME, L6: U+1E9E ẞ LATIN CAPITAL LETTER SHARP S
     key <AC03>	{[                d,               D,              seconds,                     any,                  eth,             ETH ]}; // L3: U+2033 DOUBLE PRIME
     key <AC04>	{[                f,               F,     ISO_Level5_Latch,                     any,                U2042,           U2041 ]}; // L5/L6: U+0242/0241 ɂ/Ɂ LATIN SMALL/CAPITAL LETTER GLOTTAL STOP
-    key <AC05>	{[                g,               G,                  any,                     any,                U017F,           U2211 ]}; // L5: U+017F ſ LATIN SMALL LETTER LONG S, L6: U+2211 ∑ N-ARY SUMMATION
+    key <AC05>	{[                g,               G,           dead_schwa,                     any,                U017F,           U2211 ]}; // L5: U+017F ſ LATIN SMALL LETTER LONG S, L6: U+2211 ∑ N-ARY SUMMATION
     key <AC06>	{[                h,               H,          dead_stroke,                     any,                U02BB,           U02BC ]}; // L5: U+02BB MODIFIER LETTER TURNED COMMA, L6: U+02BC MODIFIER LETTER APOSTROPHE
     key <AC07>	{[                j,               J,         dead_cedilla,                     any,                U01C0,           U01C1 ]}; // L5/L6: U+01C0/01C1 ǀ/ǁ LATIN LETTER DENTAL/LATERAL CLICK
     key <AC08>	{[                k,               K,      dead_belowcomma,         dead_abovecomma,                U01C2,           U01C3 ]}; // L5/L6: U+01C2/01C3 ǂ/ǃ LATIN LETTER ALVEOLAR/RETROFLEX CLICK
-    key <AC09>	{[                l,               L,          dead_ogonek,                   U1AB7,              lstroke,         Lstroke ]};
+    key <AC09>	{[                l,               L,          dead_ogonek,         dead_belowbreve,              lstroke,         Lstroke ]};
     key <AC10>	{[        semicolon,           colon,        dead_belowdot,  dead_belowverticalline,          ordfeminine,           U035C ]}; // L5: U+00AA FEMININE ORDINAL INDICATOR, L6: U+035C COMBINING DOUBLE BREVE BELOW
     key <AC11>	{[       apostrophe,        quotedbl,     dead_belowmacron,            dead_lowline,         ordmasculine,           U035F ]}; // L5: U+00BA MASCULINE ORDINAL INDICATOR, L6: U+035F COMBINING DOUBLE MACRON BELOW
 

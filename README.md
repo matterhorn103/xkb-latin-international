@@ -35,7 +35,9 @@ To make the layout usable for the current user:
 
 2. Copy the rules file (`rules/evdev.xml`) to `$XDG_CONFIG_HOME/xkb/rules/evdev.xml`, or append its contents to the current file if one already exists
 
-3. Restarting the session may be required to make it show up
+3. Copy the Compose file (`Compose`) to `$HOME/.XCompose`
+
+4. Restarting the session may be required to make it show up
 
 To instead make the layout available system-wide, see https://xkbcommon.org/doc/current/custom-configuration.html#xkb-data-locations for the correct location.
 
@@ -67,46 +69,66 @@ Note the following points:
 
 ### Dead keys
 
-The following dead keys are available in the Compose file for the en_US.UTF-8 locale
-on openSUSE Tumbleweed (and this locale is used for other locales as a fallback),
-most of which are used by the layout:
+The following dead keys are available in xkb,
+many of which are used by the layout:
 
-| Dead key                  | Mapped key    |
-| ------------------------- | ------------- |
-| `<dead_abovedot>`         | `AD08.3`      |
-| `<dead_abovering>`        | `AD09.3`      |
-| `<dead_acute>`            | `AD04.3`      |
-| `<dead_belowbreve>`       | Not mapped    |
-| `<dead_belowcircumflex>`  | `AE06.4`      |
-| `<dead_belowcomma>`       | `AC08.3`      |
-| `<dead_belowdiaeresis>`   | `AD10.4`      |
-| `<dead_belowdot>`         | `AC10.3`      |
-| `<dead_belowmacron>`      | `AC11.3`      |
-| `<dead_belowring>`        | `AD09.4`      |
-| `<dead_belowtilde>`       | `AD02.4`      |
-| `<dead_breve>`            | `AD07.3`      |
-| `<dead_caron> `           | `AD06.3`      |     
-| `<dead_cedilla>`          | `AC07.3`      |
-| `<dead_circumflex>`       | `AE06.3`      |
-| `<dead_currency>`         | `AE04.3`      |
-| `<dead_dasia>`            | Not mapped    |
-| `<dead_diaeresis>`        | `AD10.3`      |
-| `<dead_doubleacute>`      | `AD03.3`      |
-| `<dead_doublegrave>`      | `AD03.4`      |
-| `<dead_grave>`            | `TLDE.3`      |
-| `<dead_greek>`            | Not mapped    |
-| `<dead_hamza>`            | `AE11.4`      |
-| `<dead_hook>`             | `AD11.3`      |
-| `<dead_horn>`             | `AD12.3`      |
-| `<dead_invertedbreve>`    | `AD07.4`      |
-| `<dead_iota>`             | Not mapped    |
-| `<dead_macron>`           | `AD05.3`      |
-| `<dead_ogonek>`           | `AC09.3`      |
-| `<dead_psili>`            | Not mapped    |
-| `<dead_semivoiced_sound>` | Not mapped    |
-| `<dead_stroke>`           | `AC06.3`      |
-| `<dead_tilde>`            | `AD02.3`      |
-| `<dead_voiced_sound>`     | Not mapped    |
+| Dead key                  | Mapped key    | Notes |
+| ------------------------- | ------------- | ----- |
+| `dead_grave`              | `TLDE.3`      |       |
+| `dead_acute`              | `AD04.3`      |       |
+| `dead_circumflex`         | `AE06.3`      |       |
+| `dead_tilde`              | `AD02.3`      |       |
+| `dead_perispomeni`        | Not mapped    | Non-deprecated alias for `dead_tilde` |
+| `dead_macron`             | `AD05.3`      |       |
+| `dead_breve`              | `AD07.3`      |       |
+| `dead_abovedot`           | `AD08.3`      |       |
+| `dead_diaeresis`          | `AD10.3`      |       |
+| `dead_abovering`          | `AD09.3`      |       |
+| `dead_doubleacute`        | `AD03.3`      |       |
+| `dead_caron`              | `AD06.3`      |       |
+| `dead_cedilla`            | `AC07.3`      |       |
+| `dead_ogonek`             | `AC09.3`      |       |
+| `dead_iota`               | Not mapped    |       |
+| `dead_voiced_sound`       | Not mapped    |       |
+| `dead_semivoiced_sound`   | Not mapped    |       |
+| `dead_belowdot`           | `AC10.3`      |       |
+| `dead_hook`               | `AD11.3`      |       |
+| `dead_horn`               | `AD12.3`      |       |
+| `dead_stroke`             | `AC06.3`      | Used as a dead horizontal bar |
+| `dead_abovecomma`         | `AC08.4`      |       |
+| `dead_psili`              | Not mapped    | Non-deprecated alias for `dead_abovecomma` |
+| `dead_abovereversedcomma` | `AD11.4`      |       |
+| `dead_dasia`              | Not mapped    | Non-deprecated alias for `dead_abovereversedcomma` |
+| `dead_doublegrave`        | `AD03.4`      |       |
+| `dead_belowring`          | `AD09.4`      |       |
+| `dead_belowmacron`        | `AC11.3`      |       |
+| `dead_belowcircumflex`    | `AE06.4`      |       |
+| `dead_belowtilde`         | `AD02.4`      |       |
+| `dead_belowbreve`         | `AC09.4`      | Used as a dead below open mark |
+| `dead_belowdiaeresis`     | `AD10.4`      |       |
+| `dead_invertedbreve`      | `AD07.4`      |       |
+| `dead_belowcomma`         | `AC08.3`      |       |
+| `dead_currency`           | `AE04.3`      |       |
+| `dead_lowline`            | `AC11.4`      |       |
+| `dead_aboveverticalline`  | `AD08.4`      |       |
+| `dead_belowverticalline`  | `AC10.4`      |       |
+| `dead_longsolidusoverlay` | `AD05.4`      | Used as a dead overline |
+| `dead_a`                  | Not mapped    |       |
+| `dead_A`                  | Not mapped    |       |
+| `dead_e`                  | Not mapped    |       |
+| `dead_E`                  | Not mapped    |       |
+| `dead_i`                  | Not mapped    |       |
+| `dead_I`                  | Not mapped    |       |
+| `dead_o`                  | Not mapped    |       |
+| `dead_O`                  | Not mapped    |       |
+| `dead_u`                  | Not mapped    |       |
+| `dead_U`                  | Not mapped    |       |
+| `dead_small_schwa`        | Not mapped    | Deprecated alias for `dead_schwa` |
+| `dead_schwa`              | `AC05.3`      | Used as a dead IPA key |
+| `dead_capital_schwa`      | Not mapped    | Deprecated alias for `dead_SCHWA` |
+| `dead_SCHWA`              | Not mapped    |       |
+| `dead_greek`              | Not mapped    |       |
+| `dead_hamza`              | `AE11.4`      |       |
 
 ## Known issues
 
@@ -117,11 +139,11 @@ currently have definitions.
 
 For now, these have been replaced as follows:
 
-- `dead_ipa` -> `any`
+- `dead_ipa` -> `dead_schwa`
 - `dead_crossbar` -> `dead_stroke`
 - `dead_overline` -> `dead_longsolidusoverlay`
+- `dead_belowopenmark` -> `dead_belowbreve`
 - `dead_aboverightcomma` -> `U0315`
-- `dead_belowopenmark` -> `U1AB7`
 
 ### Behaviour of dead keys
 
