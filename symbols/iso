@@ -1,11 +1,11 @@
 // Keyboard layouts defined in ISO/IEC 9995.
 
-default alphanumeric_keys
+default alphanumeric_keys modifier_keys
 xkb_symbols "latin-intl-a" {
     // Latin International keyboard layout for key arrangement ISO A (ANSI)
     // See https://en.wikipedia.org/wiki/Latin_International_keyboard_layout
 
-    name[Group1]="Latin International-A";
+    name[Group1] = "Latin International-A";
     key.type[Group1] = "EIGHT_LEVEL";
 
     key <TLDE>	{[            grave,      asciitilde,           dead_grave,                     any,             Greek_pi,             any ]}; // Should L6 be capital pi, or perhaps U+220F N_ARY PRODUCT to match summation on g?
@@ -48,7 +48,6 @@ xkb_symbols "latin-intl-a" {
     key <AC10>	{[        semicolon,           colon,        dead_belowdot,  dead_belowverticalline,          ordfeminine,           U035C ]}; // L5: U+00AA FEMININE ORDINAL INDICATOR, L6: U+035C COMBINING DOUBLE BREVE BELOW
     key <AC11>	{[       apostrophe,        quotedbl,     dead_belowmacron,            dead_lowline,         ordmasculine,           U035F ]}; // L5: U+00BA MASCULINE ORDINAL INDICATOR, L6: U+035F COMBINING DOUBLE MACRON BELOW
 
-    key <AB00>  {[ ISO_Level5_Shift ]};
     key <AB01>	{[                z,               Z,        guillemetleft,                     any,                  ezh,             EZH ]};
     key <AB02>	{[                x,               X,       guillemetright,                     any,            checkmark,     ballotcross ]};
     key <AB03>	{[                c,               C,   doublelowquotemark,                     any,   singlelowquotemark,       copyright ]};
@@ -61,4 +60,16 @@ xkb_symbols "latin-intl-a" {
     key <AB10>	{[            slash,        question,         questiondown,                     any,                U2022,           U25E6 ]}; // L5: U+2022 • BULLET, L6: U+25E6 ◦ WHITE BULLET
 
     include "level3(ralt_switch)"
+    include "level5(lsgt_switch)" // Less/Greater key to left of Z on ISO keyboards acts as level5 shift
 };
+
+partial alphanumeric_keys modifier_keys
+xkb_symbols "latin-intl-a-rctrlextrasel" {
+    // The layout above but with Right Ctrl repurposed as a shifting Extra Selector
+
+    include "iso(latin-intl-a)"
+
+    name[Group1] = "Latin International-A with RCtrl Extra Selector"
+
+    include "level5(rctrl_switch)"
+}
