@@ -33,11 +33,11 @@ To make the layout usable for the current user:
 
 1. Copy the keymap file (`symbols/iso`) to `$XDG_CONFIG_HOME/xkb/symbols/iso`
 
-2. Generally, it is then also necessary to edit `$XDG_CONFIG_HOME/xkb/rules/evdev.xml` as described at https://xkbcommon.org/doc/current/custom-configuration.html#discoverable-layouts
+2. Copy the rules file (`rules/evdev.xml`) to `$XDG_CONFIG_HOME/xkb/rules/evdev.xml`, or append its contents to the current file if one already exists
 
 3. Restarting the session may be required to make it show up
 
-To then make the layout available system-wide, see https://xkbcommon.org/doc/current/custom-configuration.html#xkb-data-locations for the correct location.
+To instead make the layout available system-wide, see https://xkbcommon.org/doc/current/custom-configuration.html#xkb-data-locations for the correct location.
 
 ## Usage
 
