@@ -48,7 +48,7 @@ xkb_symbols "latin-intl-a" {
     key <AC10>	{[        semicolon,           colon,        dead_belowdot,  dead_belowverticalline,          ordfeminine,           U035C ]}; // L5: U+00AA FEMININE ORDINAL INDICATOR, L6: U+035C COMBINING DOUBLE BREVE BELOW
     key <AC11>	{[       apostrophe,        quotedbl,     dead_belowmacron,            dead_lowline,         ordmasculine,           U035F ]}; // L5: U+00BA MASCULINE ORDINAL INDICATOR, L6: U+035F COMBINING DOUBLE MACRON BELOW
 
-    key <AB00>  {[ ISO_Level5_Shift]}
+    key <AB00>  {[ ISO_Level5_Shift ]};
     key <AB01>	{[                z,               Z,        guillemetleft,                     any,                  ezh,             EZH ]};
     key <AB02>	{[                x,               X,       guillemetright,                     any,            checkmark,     ballotcross ]};
     key <AB03>	{[                c,               C,   doublelowquotemark,                     any,   singlelowquotemark,       copyright ]};
