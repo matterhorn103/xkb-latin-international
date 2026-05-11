@@ -62,14 +62,3 @@ xkb_symbols "latin-intl-a" {
     include "level3(ralt_switch)"
     include "level5(lsgt_switch)" // Less/Greater key to left of Z on ISO keyboards acts as level5 shift
 };
-
-partial alphanumeric_keys modifier_keys
-xkb_symbols "latin-intl-a-rctrlextrasel" {
-    // The layout above but with Right Ctrl repurposed as a shifting Extra Selector
-
-    include "iso(latin-intl-a)"
-
-    name[Group1] = "Latin International-A with RCtrl Extra Selector"
-
-    include "level5(rctrl_switch)"
-}
