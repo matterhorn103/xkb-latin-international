@@ -60,5 +60,4 @@ xkb_symbols "latin-intl-a" {
     key <AB10>	{[            slash,        question,         questiondown,                     any,                U2022,           U25E6 ]}; // L5: U+2022 • BULLET, L6: U+25E6 ◦ WHITE BULLET
 
     include "level3(ralt_switch)"
-    include "level5(lsgt_switch)" // Less/Greater key to left of Z on ISO keyboards acts as level5 shift
 };
