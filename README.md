@@ -201,12 +201,23 @@ For now, these have been replaced as follows:
 - `dead_belowopenmark` -> `dead_belowbreve`
 - `dead_aboverightcomma` -> `U0315`
 
+### Deviations of Compose vs ISO standard
+
+The initial dead key definitions (for basic letters only) were taken from the default Compose file for `en_US.UTF-8`.
+It needs to be checked that these are the same as the mappings in the ISO standard.
+
+In particular, the currency symbols are definitely not correct currently.
+
 ### Appropriateness of keysyms
 
 I am unsure if the symbol on `<AE11.4>` is definitely meant to be mapped as `<dead_hamza>`.
 
 ## TODO
 
+- Missing parts of Compose file
+  - Missing diacritics
+  - Missing superselect groups
+  - IPA
 - Upstream by opening issue at https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config
 
 ## Contributing
