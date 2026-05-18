@@ -10,8 +10,8 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Latin_International_keyboard_layou
 If you currently use the EurKEY layout, the Latin International layout may well appeal to you, just as it did to me.
 For me, the most useful symbols missing from EurKey that are here *easily* accessible are a proper minus symbol, the section sign §, the diameter sign ⌀, true primes ′ and ″, bullets •◦, and daggers †‡, but I imagine there's something useful for everyone in there.
 
-The standard defines several variants for different physical key arrangements.
-Currently, this keymap only defines the "A" variant, which is the variant for ANSI keyboards; it also works well with the common ISO key arrangement.
+The standard defines several variants for different [physical key arrangements](https://en.wikipedia.org/wiki/ISO/IEC_9995#Key_arrangements).
+Currently, this keymap only defines the "A" variant, which is the variant for ANSI keyboards (the "A" key arrangement); it also works well with the common "E" key arrangement (called the "ISO" arrangement prior to 2026, used by many European layouts e.g. UK, DE, FR).
 
 ## Installation
 
