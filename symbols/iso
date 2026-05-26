@@ -9,13 +9,6 @@
 // arrangements; variant A, for ANSI layouts, is the default here, as it is the
 // lowest common denominator (fewest keys) and also works fine on other layouts.
 
-default partial alphanumeric_keys modifier_keys
-xkb_symbols "iso_9995-3_A" {
-    // Latest ISO 9995-3 revision
-    include "latin(iso_9995-3-2026_A)"
-    name[Group1] = "Latin International (ISO 9995-3, variant A)";
-};
-
 partial alphanumeric_keys modifier_keys
 xkb_symbols "iso_9995-3-2026_A" {
     // Latin International keyboard layout for key arrangement ISO A (ANSI)
