@@ -4,7 +4,7 @@ xkb_symbols "superselect" {
     // Used by e.g. the Latin International layout
 
     name[Group1] = "Superselect (ISO 9995-9:2026)";
-    key.type[Group1] = "ALPHANUMERIC";
+    key.type[Group1] = "SIXTYFOUR_LEVEL";
 
     // Level 1 provides selectors for the different groups of characters
     // Level 2 is not really used and is left as the basic letters simply to

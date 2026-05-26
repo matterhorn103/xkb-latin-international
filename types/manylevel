@@ -1,15 +1,15 @@
 default partial xkb_types "default" {
 
-    // A type that provides enough modifiers for each of the basic Latin letters
-    // + digits (and shifted versions of each) for a total of 74 levels
-    // Useful for definition of dead-key-like mechanisms within xkb
+    // This type provides enough modifiers for each of the basic Latin
+    // letters (and shifted versions of each), making it useful for the
+    // definition of dead-key-like mechanisms within xkb
 
     // This is dependent on Wayland/libxkbcommon and will not work on X11
 
-    virtual_modifiers  LevelThree, LevelFive, LevelSeven, LevelNine, LevelEleven, LevelThirteen, LevelFifteen, LevelSeventeen, LevelNineteen, LevelTwentyOne, LevelTwentyThree, LevelTwentyFive, LevelTwentySeven, LevelTwentyNine, LevelThirtyOne, LevelThirtyThree, LevelThirtyFive, LevelThirtySeven, LevelThirtyNine, LevelFortyOne, LevelFortyThree, LevelFortyFive, LevelFortySeven, LevelFortyNine, LevelFiftyOne, LevelFiftyThree, LevelFiftyFive, LevelFiftySeven, LevelFiftyNine, LevelSixtyOne, LevelSixtyThree, LevelSixtyFive, LevelSixtySeven, LevelSixtyNine, LevelSeventyOne, LevelSeventyThree;
+    virtual_modifiers  LevelThree, LevelFive, LevelSeven, LevelNine, LevelEleven, LevelThirteen, LevelFifteen, LevelSeventeen, LevelNineteen, LevelTwentyOne, LevelTwentyThree, LevelTwentyFive, LevelTwentySeven, LevelTwentyNine, LevelThirtyOne, LevelThirtyThree, LevelThirtyFive, LevelThirtySeven, LevelThirtyNine, LevelFortyOne, LevelFortyThree, LevelFortyFive, LevelFortySeven, LevelFortyNine, LevelFiftyOne, LevelFiftyThree, LevelFiftyFive, LevelFiftySeven, LevelFiftyNine, LevelSixtyOne, LevelSixtyThree;
 
-    type "ALPHANUMERIC" {
-	modifiers = Shift + LevelThree + LevelFive + LevelSeven + LevelNine + LevelEleven + LevelThirteen + LevelFifteen + LevelSeventeen + LevelNineteen + LevelTwentyOne + LevelTwentyThree + LevelTwentyFive + LevelTwentySeven + LevelTwentyNine + LevelThirtyOne + LevelThirtyThree + LevelThirtyFive + LevelThirtySeven + LevelThirtyNine + LevelFortyOne + LevelFortyThree + LevelFortyFive + LevelFortySeven + LevelFortyNine + LevelFiftyOne + LevelFiftyThree + LevelFiftyFive + LevelFiftySeven + LevelFiftyNine + LevelSixtyOne + LevelSixtyThree + LevelSixtyFive + LevelSixtySeven + LevelSixtyNine + LevelSeventyOne + LevelSeventyThree;
+    type "SIXTYFOUR_LEVEL" {
+	modifiers = Shift + LevelThree + LevelFive + LevelSeven + LevelNine + LevelEleven + LevelThirteen + LevelFifteen + LevelSeventeen + LevelNineteen + LevelTwentyOne + LevelTwentyThree + LevelTwentyFive + LevelTwentySeven + LevelTwentyNine + LevelThirtyOne + LevelThirtyThree + LevelThirtyFive + LevelThirtySeven + LevelThirtyNine + LevelFortyOne + LevelFortyThree + LevelFortyFive + LevelFortySeven + LevelFortyNine + LevelFiftyOne + LevelFiftyThree + LevelFiftyFive + LevelFiftySeven + LevelFiftyNine + LevelSixtyOne + LevelSixtyThree;
 	map[None] = Level1;
 	map[Shift] = Level2;
 	map[LevelThree] = Level3;
@@ -74,16 +74,6 @@ default partial xkb_types "default" {
 	map[Shift+LevelSixtyOne] = Level62;
 	map[LevelSixtyThree] = Level63;
 	map[Shift+LevelSixtyThree] = Level64;
-	map[LevelSixtyFive] = Level65;
-	map[Shift+LevelSixtyFive] = Level66;
-	map[LevelSixtySeven] = Level67;
-	map[Shift+LevelSixtySeven] = Level68;
-	map[LevelSixtyNine] = Level69;
-	map[Shift+LevelSixtyNine] = Level70;
-	map[LevelSeventyOne] = Level71;
-	map[Shift+LevelSeventyOne] = Level72;
-	map[LevelSeventyThree] = Level73;
-	map[Shift+LevelSeventyThree] = Level74;
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";
 	level_name[Level3] = "LevelThree";
@@ -148,15 +138,5 @@ default partial xkb_types "default" {
 	level_name[Level62] = "Shift+LevelSixtyOne";
 	level_name[Level63] = "LevelSixtyThree";
 	level_name[Level64] = "Shift+LevelSixtyThree";
-	level_name[Level65] = "LevelSixtyFive";
-	level_name[Level66] = "Shift+LevelSixtyFive";
-	level_name[Level67] = "LevelSixtySeven";
-	level_name[Level68] = "Shift+LevelSixtySeven";
-	level_name[Level69] = "LevelSixtyNine";
-	level_name[Level70] = "Shift+LevelSixtyNine";
-	level_name[Level71] = "LevelSeventyOne";
-	level_name[Level72] = "Shift+LevelSeventyOne";
-	level_name[Level73] = "LevelSeventyThree";
-	level_name[Level74] = "Shift+LevelSeventyThree";
     };
 };
