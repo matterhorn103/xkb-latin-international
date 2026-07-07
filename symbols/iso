@@ -18,7 +18,7 @@ xkb_symbols "iso_9995-3-2026_A" {
 
     // Modifiers    None            Shift           AltGr                   AltGr + Shift           ExtraSelector          ExSel + Shift
 
-    key <TLDE>	{ [ grave,          asciitilde,     dead_grave,             any,                    Greek_pi,               any             ] }; // Should L6 be capital pi, or perhaps U+220F N_ARY PRODUCT to match summation on g?
+    key <TLDE>	{ [ grave,          asciitilde,     dead_grave,             any,                    Greek_pi,               U220F           ] }; // L6: U+220F ∏ N_ARY PRODUCT
     key <AE01>	{ [ 1,              exclam,         exclamdown,             any,                    onequarter,             any             ] };
     key <AE02>	{ [ 2,              at,             yen,                    any,                    onehalf,                any             ] };
     key <AE03>	{ [ 3,              numbersign,     sterling,               any,                    threequarters,          any             ] };
@@ -32,7 +32,7 @@ xkb_symbols "iso_9995-3-2026_A" {
     key <AE11>	{ [ minus,          underscore,     U00AD,                  dead_hamza,             division,               U203B           ] }; // L3: U+00AD SOFT HYPHEN, L6: U+203B ※ REFERENCE MARK
     key <AE12>	{ [ equal,          plus,           U2212,                  any,                    notequal,               plusminus       ] }; // L3: U+2212 − MINUS SIGN
 
-    key <AD01>	{ [ q,              Q,              Multi_key,              any,                    oe,                     OE              ] }; // Multi_key acts as the Superselector (essentially a Compose key)
+    key <AD01>	{ [ q,              Q,              Multi_key,              any,                    oe,                     OE              ] }; // Multi_key acts as the Superselect key (essentially a Compose key)
     key <AD02>	{ [ w,              W,              dead_tilde,             dead_belowtilde,        rightarrow,             leftarrow       ] };
     key <AD03>	{ [ e,              E,              dead_doubleacute,       dead_doublegrave,       schwa,                  SCHWA           ] };
     key <AD04>	{ [ r,              R,              dead_acute,             any,                    U027C,                  registered      ] }; // L5: U+027C ɼ LATIN SMALL LETTER R WITH LONG LEG
