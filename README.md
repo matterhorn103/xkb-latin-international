@@ -191,7 +191,7 @@ Substitutes are shown here for whitespace characters according to https://en.wik
 | `3`     | £                       | ¾         |            |
 | `4`     |                         | ¢         |            |
 | `5`     | €                       | ‰         |            |
-| `6`     |                         | ‰         | ¶          |
+| `6`     |                         | §         | ¶          |
 | `7`     | ⌀                       | ¬         | ⁊          |
 | `8`     | ×                       | †         | ‡          |
 | `9`     | ⍽ (narrow nbsp)         | ⟨         | 《          |
@@ -314,7 +314,7 @@ The modifier letters are shown here with a preceding x for demonstration purpose
 | `3`     | U+00A3 £ POUND SIGN                                 |                                         | U+00BE ¾ VULGAR FRACTION THREE QUARTERS     |                                            |
 | `4`     | `¤` (*Currency*)                                    |                                         | U+00A2 ¢ CENT SIGN                          | U+0361 ◌͡◌ COMBINING DOUBLE INVERTED BREVE  |
 | `5`     | U+20AC € EURO SIGN                                  |                                         | U+2030 ‰ PER MILLE SIGN                     |                                            |
-| `6`     | ◌̂  *dead circumflex, **superscripts***              | ◌̭ *dead circumflex below*               | U+00A7 ‰ SECTION SIGN                       | U+00B6 ¶ PILCROW SIGN                      |
+| `6`     | ◌̂  *dead circumflex, **superscripts***              | ◌̭ *dead circumflex below*               | U+00A7 § SECTION SIGN                       | U+00B6 ¶ PILCROW SIGN                      |
 | `7`     | U+2300 ⌀ DIAMETER SIGN                              |                                         | U+00AC ¬ NOT SIGN                           | U+204A ⁊ TIRONIAN SIGN ET                  |
 | `8`     | U+00D7 × MULTIPLICATION SIGN                        |                                         | U+2020 † DAGGER                             | U+2021 ‡ DOUBLE DAGGER                     |
 | `9`     | U+202F ⍽ NARROW NO-BREAK SPACE                      |                                         | U+2329 ⟨ LEFT-POINTING ANGLE BRACKET        | U+300A 《 LEFT DOUBLE ANGLE BRACKET         |

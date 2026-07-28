@@ -11,10 +11,16 @@ If the column is empty, it is because the character would require escaping in Ma
 ## Direct entry
 
 The "Demo" column shows the appearance of the character with the aid of a dotted circle ◌ in the case of combining diacritics, a preceding x in the case of modifier letters, and visible substitute characters for otherwise-invisible whitespace characters.
-When possible, the *actual* resulting character is shown in the "Character" column.
+When possible, the *actual* resulting character is shown in the "Output" column.
 
 "Key" is the unmodified key and is not case-sensitive e.g. `M` is the QWERTY key labelled M, without `Shift`.
 `~` is the backtick key to the left of `1`.
+
+Dead keys and special keys (Extra Selector, IPA, currency) are not listed.
+
+For convenient reference, the table is repeated twice, with different sort orders.
+
+### Sorted by modifier
 
 | Key     | Modifiers | Demo | Code point | Output | Unicode name |
 | ------- | --------- | ---- | ---------- | ------ | ------------ |
@@ -66,6 +72,7 @@ When possible, the *actual* resulting character is shown in the "Character" colu
 | `.`     |               | . | U+002E | . | FULL STOP |
 | `/`     |               | / | U+002F | / | SOLIDUS |
 | `Space` |               | ␣ | U+0020 |   | SPACE |
+| | | | | | |
 | `~`     | `Shift`       | ~ | U+007E | ~ | TILDE |
 | `1`     | `Shift`       | ! | U+0021 | ! | EXCLAMATION MARK |
 | `2`     | `Shift`       | @ | U+0040 | @ | COMMERCIAL AT |
@@ -114,6 +121,7 @@ When possible, the *actual* resulting character is shown in the "Character" colu
 | `.`     | `Shift`       | > | U+003E | > | GREATER-THAN SIGN |
 | `/`     | `Shift`       | ? | U+003F | ? | QUESTION MARK |
 | `Space` | `Shift`       | ␣ | U+0020 |   | SPACE |
+| | | | | | |
 | `1`     | `AltGr`       | ¡ | U+00A1 | ¡ | INVERTED EXCLAMATION MARK |
 | `2`     | `AltGr`       | ¥ | U+00A5 | ¥ | YEN SIGN |
 | `3`     | `AltGr`       | £ | U+00A3 | £ | POUND SIGN |
@@ -139,6 +147,7 @@ When possible, the *actual* resulting character is shown in the "Character" colu
 | `.`     | `AltGr`       | · | U+00B7 | · | MIDDLE DOT |
 | `/`     | `AltGr`       | ¿ | U+00BF | ¿ | INVERTED QUESTION MARK |
 | `Space` | `AltGr`       | ⍽ | U+00A0 |   | NO-BREAK SPACE |
+| | | | | | |
 | `T`     | `AltGr+Shift` | ◌̅  | U+0305 |   | COMBINING OVERLINE |
 | `I`     | `AltGr+Shift` | ◌̍  | U+030D |   | COMBINING VERTICAL LINE ABOVE |
 | `[`     | `AltGr+Shift` | ◌̒  | U+0312 |   | COMBINING TURNED COMMA ABOVE |
@@ -150,13 +159,14 @@ When possible, the *actual* resulting character is shown in the "Character" colu
 | `,`     | `AltGr+Shift` | ◌᷾  | U+1DFE |   | COMBINING LEFT ARROWHEAD ABOVE |
 | `.`     | `AltGr+Shift` | ◌͐  | U+0350 |   | COMBINING RIGHT ARROWHEAD ABOVE |
 | `Space` | `AltGr+Shift` | ␣  | U+0020 |   | SPACE |
+| | | | | | |
 | `~`     | `⬀`           | π | U+03C0 | π | GREEK SMALL LETTER PI |
 | `1`     | `⬀`           | ¼ | U+00BC | ¼ | VULGAR FRACTION ONE QUARTER |
 | `2`     | `⬀`           | ½ | U+00BD | ½ | VULGAR FRACTION ONE HALF |
 | `3`     | `⬀`           | ¾ | U+00BE | ¾ | VULGAR FRACTION THREE QUARTERS |
 | `4`     | `⬀`           | ¢ | U+00A2 | ¢ | CENT SIGN |
 | `5`     | `⬀`           | ‰ | U+2030 | ‰ | PER MILLE SIGN |
-| `6`     | `⬀`           | ‰ | U+00A7 | ‰ | SECTION SIGN |
+| `6`     | `⬀`           | § | U+00A7 | § | SECTION SIGN |
 | `7`     | `⬀`           | ¬ | U+00AC | ¬ | NOT SIGN |
 | `8`     | `⬀`           | † | U+2020 | † | DAGGER |
 | `9`     | `⬀`           | ⟨ | U+2329 | ⟨ | LEFT-POINTING ANGLE BRACKET |
@@ -192,12 +202,13 @@ When possible, the *actual* resulting character is shown in the "Character" colu
 | `C`     | `⬀`           | ‚ | U+201A | ‚ | SINGLE LOW-9 QUOTATION MARK |
 | `V`     | `⬀`           | ‘ | U+2018 | ‘ | LEFT SINGLE QUOTATION MARK |
 | `B`     | `⬀`           | ’ | U+2019 | ’ | RIGHT SINGLE QUOTATION MARK |
-| `N`     | `⬀`           | ƞ | U+019E | ƞ | LATIN SMALL LETTER N WITH LONG RIGHT LEG |
+| `N`     | `⬀`           | ŋ | U+014B | ŋ | LATIN SMALL LETTER ENG |
 | `M`     | `⬀`           | μ | U+03BC | μ | GREEK SMALL LETTER MU |
 | `,`     | `⬀`           | ≤ | U+2264 | ≤ | LESS-THAN OR EQUAL TO |
 | `.`     | `⬀`           | ≥ | U+2265 | ≥ | GREATER-THAN OR EQUAL TO |
 | `/`     | `⬀`           | • | U+2022 | • | BULLET |
-| `Space` | `⬀`           | ␣ | U+0020 |   | SPACE |
+| `Space` | `⬀`           |   | U+2007 |   | FIGURE SPACE |
+| | | | | | |
 | `~`     | `⬀+Shift`     | ∏ | U+220F | ∏ | N_ARY PRODUCT |
 | `4`     | `⬀+Shift`     | ◌͡◌ | U+0361 |   | COMBINING DOUBLE INVERTED BREVE |
 | `6`     | `⬀+Shift`     | ¶ | U+00B6 | ¶ | PILCROW SIGN |
@@ -236,11 +247,287 @@ When possible, the *actual* resulting character is shown in the "Character" colu
 | `C`     | `⬀+Shift`     | © | U+00A9 | © | COPYRIGHT SIGN |
 | `V`     | `⬀+Shift`     | ‹ | U+2039 | ‹ | SINGLE LEFT-POINTING ANGLE QUOTATION MARK |
 | `B`     | `⬀+Shift`     | › | U+203A | › | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK |
-| `N`     | `⬀+Shift`     | Ƞ | U+0220 | Ƞ | LATIN CAPITAL LETTER N WITH LONG RIGHT LEG |
+| `N`     | `⬀+Shift`     | Ŋ | U+014A | Ŋ | LATIN CAPITAL LETTER ENG |
 | `M`     | `⬀+Shift`     | Ω | U+03A9 | Ω | GREEK CAPITAL LETTER OMEGA |
 | `,`     | `⬀+Shift`     | ≪ | U+226A | ≪ | MUCH LESS-THAN |
 | `.`     | `⬀+Shift`     | ≫ | U+226B | ≫ | MUCH GREATER-THAN |
 | `/`     | `⬀+Shift`     | ◦ | U+25E6 | ◦ | WHITE BULLET |
+| `Space` | `⬀+Shift`     | ␣ | U+0020 |   | SPACE |
+
+### Sorted by key
+
+| Key     | Modifiers | Demo | Code point | Output | Unicode name |
+| ------- | --------- | ---- | ---------- | ------ | ------------ |
+| `~`     |               | \`| U+0060 |   | GRAVE ACCENT |
+| `~`     | `Shift`       | ~ | U+007E | ~ | TILDE |
+| `~`     | `⬀`           | π | U+03C0 | π | GREEK SMALL LETTER PI |
+| `~`     | `⬀+Shift`     | ∏ | U+220F | ∏ | N_ARY PRODUCT |
+| | | | | | |
+| `1`     |               | 1 | U+0031 | 1 | DIGIT ONE |
+| `1`     | `Shift`       | ! | U+0021 | ! | EXCLAMATION MARK |
+| `1`     | `AltGr`       | ¡ | U+00A1 | ¡ | INVERTED EXCLAMATION MARK |
+| `1`     | `⬀`           | ¼ | U+00BC | ¼ | VULGAR FRACTION ONE QUARTER |
+| | | | | | |
+| `2`     |               | 2 | U+0032 | 2 | DIGIT TWO |
+| `2`     | `Shift`       | @ | U+0040 | @ | COMMERCIAL AT |
+| `2`     | `AltGr`       | ¥ | U+00A5 | ¥ | YEN SIGN |
+| `2`     | `⬀`           | ½ | U+00BD | ½ | VULGAR FRACTION ONE HALF |
+| | | | | | |
+| `3`     |               | 3 | U+0033 | 3 | DIGIT THREE |
+| `3`     | `Shift`       | # | U+0023 | # | NUMBER SIGN |
+| `3`     | `AltGr`       | £ | U+00A3 | £ | POUND SIGN |
+| `3`     | `⬀`           | ¾ | U+00BE | ¾ | VULGAR FRACTION THREE QUARTERS |
+| | | | | | |
+| `4`     |               | 4 | U+0034 | 4 | DIGIT FOUR |
+| `4`     | `Shift`       | $ | U+0024 | $ | DOLLAR SIGN |
+| `4`     | `⬀`           | ¢ | U+00A2 | ¢ | CENT SIGN |
+| `4`     | `⬀+Shift`     | ◌͡◌ | U+0361 |   | COMBINING DOUBLE INVERTED BREVE |
+| | | | | | |
+| `5`     |               | 5 | U+0035 | 5 | DIGIT FIVE |
+| `5`     | `Shift`       | % | U+0025 | % | PERCENT SIGN |
+| `5`     | `AltGr`       | € | U+20AC | € | EURO SIGN |
+| `5`     | `⬀`           | ‰ | U+2030 | ‰ | PER MILLE SIGN |
+| | | | | | |
+| `6`     |               | 6 | U+0036 | 6 | DIGIT SIX |
+| `6`     | `Shift`       | ^ | U+005E | ^ | CIRCUMFLEX ACCENT |
+| `6`     | `⬀`           | § | U+00A7 | § | SECTION SIGN |
+| `6`     | `⬀+Shift`     | ¶ | U+00B6 | ¶ | PILCROW SIGN |
+| | | | | | |
+| `7`     |               | 7 | U+0037 | 7 | DIGIT SEVEN |
+| `7`     | `Shift`       | & | U+0026 | & | AMPERSAND |
+| `7`     | `AltGr`       | ⌀ | U+2300 | ⌀ | DIAMETER SIGN |
+| `7`     | `⬀`           | ¬ | U+00AC | ¬ | NOT SIGN |
+| `7`     | `⬀+Shift`     | ⁊ | U+204A | ⁊ | TIRONIAN SIGN ET |
+| | | | | | |
+| `8`     |               | 8 | U+0038 | 8 | DIGIT EIGHT |
+| `8`     | `Shift`       | * | U+002A | * | ASTERISK |
+| `8`     | `AltGr`       | × | U+00D7 | × | MULTIPLICATION SIGN |
+| `8`     | `⬀`           | † | U+2020 | † | DAGGER |
+| `8`     | `⬀+Shift`     | ‡ | U+2021 | ‡ | DOUBLE DAGGER |
+| | | | | | |
+| `9`     |               | 9 | U+0039 | 9 | DIGIT NINE |
+| `9`     | `Shift`       | ( | U+0028 | ( | LEFT PARENTHESIS |
+| `9`     | `AltGr`       | ⍽ | U+202F |   | NARROW NO-BREAK SPACE |
+| `9`     | `⬀`           | ⟨ | U+2329 | ⟨ | LEFT-POINTING ANGLE BRACKET |
+| `9`     | `⬀+Shift`     | 《 | U+300A | 《 | LEFT DOUBLE ANGLE BRACKET |
+| | | | | | |
+| `0`     |               | 0 | U+0030 | 0 | DIGIT ZERO |
+| `0`     | `Shift`       | ) | U+0029 | ) | RIGHT PARENTHESIS |
+| `0`     | `AltGr`       | ‑ | U+2011 | ‑ | NON-BREAKING HYPHEN |
+| `0`     | `⬀`           | ⟩ | U+232A | ⟩ | RIGHT-POINTING ANGLE BRACKET |
+| `0`     | `⬀+Shift`     | 》 | U+300B | 》 | RIGHT DOUBLE ANGLE BRACKET |
+| | | | | | |
+| `-`     |               | - | U+002D | - | HYPHEN-MINUS |
+| `-`     | `Shift`       | _ | U+005F | _ | LOW LINE |
+| `-`     | `AltGr`       |   | U+00AD | ­ | SOFT HYPHEN |
+| `-`     | `⬀`           | ÷ | U+00F7 | ÷ | DIVISION SIGN |
+| `-`     | `⬀+Shift`     | ※ | U+203B | ※ | REFERENCE MARK |
+| | | | | | |
+| `=`     |               | = | U+003D | = | EQUALS SIGN |
+| `=`     | `Shift`       | + | U+002B | + | PLUS SIGN |
+| `=`     | `AltGr`       | − | U+2212 | − | MINUS SIGN |
+| `=`     | `⬀`           | ≠ | U+2260 | ≠ | NOT EQUAL TO |
+| `=`     | `⬀+Shift`     | ± | U+00B1 | ± | PLUS-MINUS SIGN |
+| | | | | | |
+| `Q`     |               | q | U+0071 | q | LATIN SMALL LETTER Q |
+| `Q`     | `Shift`       | Q | U+0051 | Q | LATIN CAPITAL LETTER Q |
+| `Q`     | `⬀`           | œ | U+0153 | œ | LATIN SMALL LIGATURE OE |
+| `Q`     | `⬀+Shift`     | Œ | U+0152 | Œ | LATIN CAPITAL LIGATURE OE |
+| | | | | | |
+| `W`     |               | w | U+0077 | w | LATIN SMALL LETTER W |
+| `W`     | `Shift`       | W | U+0057 | W | LATIN CAPITAL LETTER W |
+| `W`     | `⬀`           | → | U+2192 | → | RIGHTWARDS ARROW |
+| `W`     | `⬀+Shift`     | ← | U+2190 | ← | LEFTWARDS ARROW |
+| | | | | | |
+| `E`     |               | e | U+0065 | e | LATIN SMALL LETTER E |
+| `E`     | `Shift`       | E | U+0045 | E | LATIN CAPITAL LETTER E |
+| `E`     | `⬀`           | ə | U+0259 | ə | LATIN SMALL LETTER SCHWA |
+| `E`     | `⬀+Shift`     | Ə | U+018F | Ə | LATIN CAPITAL LETTER SCHWA |
+| | | | | | |
+| `R`     |               | r | U+0072 | r | LATIN SMALL LETTER R |
+| `R`     | `Shift`       | R | U+0052 | R | LATIN CAPITAL LETTER R |
+| `R`     | `⬀`           | ɼ | U+027C | ɼ | LATIN SMALL LETTER R WITH LONG LEG |
+| `R`     | `⬀+Shift`     | ® | U+00AE | ® | REGISTERED SIGN |
+| | | | | | |
+| `T`     |               | t | U+0074 | t | LATIN SMALL LETTER T |
+| `T`     | `Shift`       | T | U+0054 | T | LATIN CAPITAL LETTER T |
+| `T`     | `AltGr+Shift` | ◌̅  | U+0305 |   | COMBINING OVERLINE |
+| `T`     | `⬀`           | þ | U+00FE | þ | LATIN SMALL LETTER THORN |
+| `T`     | `⬀+Shift`     | Þ | U+00DE | Þ | LATIN CAPITAL LETTER THORN |
+| | | | | | |
+| `Y`     |               | y | U+0079 | y | LATIN SMALL LETTER Y |
+| `Y`     | `Shift`       | Y | U+0059 | Y | LATIN CAPITAL LETTER Y |
+| `Y`     | `⬀`           | ↘ | U+2198 | ↘ | SOUTH EAST ARROW |
+| `Y`     | `⬀+Shift`     | ↗ | U+2197 | ↗ | NORTH EAST ARROW |
+| | | | | | |
+| `U`     |               | u | U+0075 | u | LATIN SMALL LETTER U |
+| `U`     | `Shift`       | U | U+0055 | U | LATIN CAPITAL LETTER U |
+| `U`     | `⬀`           | ↓ | U+2193 | ↓ | DOWNWARDS ARROW |
+| `U`     | `⬀+Shift`     | ↑ | U+2191 | ↑ | UPWARDS ARROW |
+| | | | | | |
+| `I`     |               | i | U+0069 | i | LATIN SMALL LETTER I |
+| `I`     | `Shift`       | I | U+0049 | I | LATIN CAPITAL LETTER I |
+| `I`     | `AltGr+Shift` | ◌̍  | U+030D |   | COMBINING VERTICAL LINE ABOVE |
+| `I`     | `⬀`           | ı | U+0131 | ı | LATIN SMALL LETTER DOTLESS I |
+| `I`     | `⬀+Shift`     | ™ | U+2122 | ™ | TRADE MARK SIGN |
+| | | | | | |
+| `O`     |               | o | U+006F | o | LATIN SMALL LETTER O |
+| `O`     | `Shift`       | O | U+004F | O | LATIN CAPITAL LETTER O |
+| `O`     | `⬀`           | ø | U+00F8 | ø | LATIN SMALL LETTER O WITH STROKE |
+| `O`     | `⬀+Shift`     | Ø | U+00D8 | Ø | LATIN CAPITAL LETTER O WITH STROKE |
+| | | | | | |
+| `P`     |               | p | U+0070 | p | LATIN SMALL LETTER P |
+| `P`     | `Shift`       | P | U+0050 | P | LATIN CAPITAL LETTER P |
+| `P`     | `⬀`          | xʹ | U+02B9 | ʹ | MODIFIER LETTER PRIME |
+| `P`     | `⬀+Shift`    | xʺ | U+02BA | ʺ | MODIFIER LETTER DOUBLE PRIME |
+| | | | | | |
+| `[`     |               | [ | U+005B | [ | LEFT SQUARE BRACKET |
+| `[`     | `Shift`       | { | U+007B | { | LEFT CURLY BRACKET |
+| `[`     | `AltGr+Shift` | ◌̒  | U+0312 |   | COMBINING TURNED COMMA ABOVE |
+| `[`     | `⬀`          | xˈ | U+02C8 | ˈ | MODIFIER LETTER VERTICAL LINE |
+| `[`     | `⬀+Shift`    | xʿ | U+02BF | ʿ | MODIFIER LETTER LEFT HALF RING |
+| | | | | | |
+| `]`     |               | ] | U+005D | ] | RIGHT SQUARE BRACKET |
+| `]`     | `Shift`       | } | U+007D | } | RIGHT CURLY BRACKET |
+| `]`     | `AltGr+Shift` | ◌̕  | U+0315 |   | COMBINING COMMA ABOVE RIGHT |
+| `]`     | `⬀`          | xˌ | U+02CC | ˌ | MODIFIER LETTER LOW VERTICAL LINE |
+| `]`     | `⬀+Shift`    | xʾ | U+02BE | ʾ | MODIFIER LETTER RIGHT HALF RING |
+| | | | | | |
+| `\`     |              | \\ | U+005C |   | REVERSE SOLIDUS |
+| `\`     | `Shift`      | \| | U+007C |   | VERTICAL LINE |
+| `\`     | `AltGr`       | … | U+2026 | … | HORIZONTAL ELLIPSIS |
+| `\`     | `⬀`           |   | U+200C |   | ZERO WIDTH NON-JOINER |
+| `\`     | `⬀+Shift`     | ¦ | U+00A6 | ¦ | BROKEN BAR |
+| | | | | | |
+| `A`     |               | a | U+0061 | a | LATIN SMALL LETTER A |
+| `A`     | `Shift`       | A | U+0041 | A | LATIN CAPITAL LETTER A |
+| `A`     | `AltGr`       | ° | U+00B0 | ° | DEGREE SIGN |
+| `A`     | `⬀`           | æ | U+00E6 | æ | LATIN SMALL LETTER AE |
+| `A`     | `⬀+Shift`     | Æ | U+00C6 | Æ | LATIN CAPITAL LETTER AE |
+| | | | | | |
+| `S`     |               | s | U+0073 | s | LATIN SMALL LETTER S |
+| `S`     | `Shift`       | S | U+0053 | S | LATIN CAPITAL LETTER S |
+| `S`     | `AltGr`       | ′ | U+2032 | ′ | PRIME |
+| `S`     | `⬀`           | ß | U+00DF | ß | LATIN SMALL LETTER SHARP S |
+| `S`     | `⬀+Shift`     | ẞ | U+1E9E | ẞ | LATIN CAPITAL LETTER SHARP S |
+| | | | | | |
+| `D`     |               | d | U+0064 | d | LATIN SMALL LETTER D |
+| `D`     | `Shift`       | D | U+0044 | D | LATIN CAPITAL LETTER D |
+| `D`     | `AltGr`       | ″ | U+2033 | ″ | DOUBLE PRIME |
+| `D`     | `⬀`           | ð | U+00F0 | ð | LATIN SMALL LETTER ETH |
+| `D`     | `⬀+Shift`     | Ð | U+00D0 | Ð | LATIN CAPITAL LETTER ETH |
+| | | | | | |
+| `F`     |               | f | U+0066 | f | LATIN SMALL LETTER F |
+| `F`     | `Shift`       | F | U+0046 | F | LATIN CAPITAL LETTER F |
+| `F`     | `⬀`           | ɂ | U+0242 | ɂ | LATIN SMALL LETTER GLOTTAL STOP |
+| `F`     | `⬀+Shift`     | Ɂ | U+0241 | Ɂ | LATIN CAPITAL LETTER GLOTTAL STOP |
+| | | | | | |
+| `G`     |               | g | U+0067 | g | LATIN SMALL LETTER G |
+| `G`     | `Shift`       | G | U+0047 | G | LATIN CAPITAL LETTER G |
+| `G`     | `⬀`           | ſ | U+017F | ſ | LATIN SMALL LETTER LONG S |
+| `G`     | `⬀+Shift`     | ∑ | U+2211 | ∑ | N-ARY SUMMATION |
+| | | | | | |
+| `H`     |               | h | U+0068 | h | LATIN SMALL LETTER H |
+| `H`     | `Shift`       | H | U+0048 | H | LATIN CAPITAL LETTER H |
+| `H`     | `⬀`          | xʻ | U+02BB | ʻ | MODIFIER LETTER TURNED COMMA |
+| `H`     | `⬀+Shift`    | xʼ | U+02BC | ʼ |  MODIFIER LETTER APOSTROPHE |
+| | | | | | |
+| `J`     |               | j | U+006A | j | LATIN SMALL LETTER J |
+| `J`     | `Shift`       | J | U+004A | J | LATIN CAPITAL LETTER J |
+| `J`     | `⬀`           | ǀ | U+01C0 | ǀ | LATIN LETTER DENTAL CLICK |
+| `J`     | `⬀+Shift`     | ǁ | U+01C1 | ǁ | LATIN LETTER LATERAL CLICK |
+| | | | | | |
+| `K`     |               | k | U+006B | k | LATIN SMALL LETTER K |
+| `K`     | `Shift`       | K | U+004B | K | LATIN CAPITAL LETTER K |
+| `K`     | `AltGr+Shift` | ◌̓  | U+0313 |   | COMBINING COMMA ABOVE |
+| `K`     | `⬀`           | ǂ | U+01C2 | ǂ | LATIN LETTER ALVEOLAR CLICK |
+| `K`     | `⬀+Shift`     | ǃ | U+01C3 | ǃ | LATIN LETTER RETROFLEX CLICK |
+| | | | | | |
+| `L`     |               | l | U+006C | l | LATIN SMALL LETTER L |
+| `L`     | `Shift`       | L | U+004C | L | LATIN CAPITAL LETTER L |
+| `L`     | `AltGr+Shift` | ◌᪷  | U+1AB7 |   | COMBINING OPEN MARK BELOW |
+| `L`     | `⬀`           | ł | U+0142 | ł | LATIN SMALL LETTER L WITH STROKE |
+| `L`     | `⬀+Shift`     | Ł | U+0141 | Ł | LATIN CAPITAL LETTER L WITH STROKE |
+| | | | | | |
+| `;`     |               | ; | U+003B | ; | SEMICOLON |
+| `;`     | `Shift`       | : | U+003A | : | COLON |
+| `;`     | `AltGr+Shift` | ◌̩  | U+0329 |   | COMBINING VERTICAL LINE BELOW |
+| `;`     | `⬀`           | ª | U+00AA | ª | FEMININE ORDINAL INDICATOR |
+| `;`     | `⬀+Shift`     | ◌͜◌ | U+035C |   | COMBINING DOUBLE BREVE BELOW |
+| | | | | | |
+| `'`     |               | ' | U+0027 | ' | APOSTROPHE |
+| `'`     | `Shift`       | " | U+0022 | " | QUOTATION MARK |
+| `'`     | `AltGr+Shift` | ◌̲  | U+0332 |   | COMBINING LOW LINE |
+| `'`     | `⬀`           | º | U+00BA | º | MASCULINE ORDINAL INDICATOR |
+| `'`     | `⬀+Shift`     | ◌͟◌ | U+035F |   | COMBINING DOUBLE MACRON BELOW |
+| | | | | | |
+| `Z`     |               | z | U+007A | z | LATIN SMALL LETTER Z |
+| `Z`     | `Shift`       | Z | U+005A | Z | LATIN CAPITAL LETTER Z |
+| `Z`     | `AltGr`       | « | U+00AB | « | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK |
+| `Z`     | `⬀`           | ʒ | U+0292 | ʒ | LATIN SMALL LETTER EZH |
+| `Z`     | `⬀+Shift`     | Ʒ | U+01B7 | Ʒ | LATIN CAPITAL LETTER EZH |
+| | | | | | |
+| `X`     |               | x | U+0078 | x | LATIN SMALL LETTER X |
+| `X`     | `Shift`       | X | U+0058 | X | LATIN CAPITAL LETTER X |
+| `X`     | `AltGr`       | » | U+00BB | » | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK |
+| `X`     | `⬀`           | ✓ | U+2713 | ✓ | CHECK MARK |
+| `X`     | `⬀+Shift`     | ✗ | U+2717 | ✗ | BALLOT X |
+| | | | | | |
+| `C`     |               | c | U+0063 | c | LATIN SMALL LETTER C |
+| `C`     | `Shift`       | C | U+0043 | C | LATIN CAPITAL LETTER C |
+| `C`     | `AltGr`       | „ | U+201E | „ | DOUBLE LOW-9 QUOTATION MARK |
+| `C`     | `⬀`           | ‚ | U+201A | ‚ | SINGLE LOW-9 QUOTATION MARK |
+| `C`     | `⬀+Shift`     | © | U+00A9 | © | COPYRIGHT SIGN |
+| | | | | | |
+| `V`     |               | v | U+0076 | v | LATIN SMALL LETTER V |
+| `V`     | `Shift`       | V | U+0056 | V | LATIN CAPITAL LETTER V |
+| `V`     | `AltGr`       | “ | U+201C | “ | LEFT DOUBLE QUOTATION MARK |
+| `V`     | `⬀`           | ‘ | U+2018 | ‘ | LEFT SINGLE QUOTATION MARK |
+| `V`     | `⬀+Shift`     | ‹ | U+2039 | ‹ | SINGLE LEFT-POINTING ANGLE QUOTATION MARK |
+| | | | | | |
+| `B`     |               | b | U+0062 | b | LATIN SMALL LETTER B |
+| `B`     | `Shift`       | B | U+0042 | B | LATIN CAPITAL LETTER B |
+| `B`     | `AltGr`       | ” | U+201D | ” | RIGHT DOUBLE QUOTATION MARK |
+| `B`     | `⬀`           | ’ | U+2019 | ’ | RIGHT SINGLE QUOTATION MARK |
+| `B`     | `⬀+Shift`     | › | U+203A | › | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK |
+| | | | | | |
+| `N`     |               | n | U+006E | n | LATIN SMALL LETTER N |
+| `N`     | `Shift`       | N | U+004E | N | LATIN CAPITAL LETTER N |
+| `N`     | `AltGr`       | – | U+2013 | – | EN DASH |
+| `N`     | `⬀`           | ŋ | U+014B | ŋ | LATIN SMALL LETTER ENG |
+| `N`     | `⬀+Shift`     | Ŋ | U+014A | Ŋ | LATIN CAPITAL LETTER ENG |
+| | | | | | |
+| `M`     |               | m | U+006D | m | LATIN SMALL LETTER M |
+| `M`     | `Shift`       | M | U+004D | M | LATIN CAPITAL LETTER M |
+| `M`     | `AltGr`       | — | U+2014 | — | EM DASH |
+| `M`     | `⬀`           | μ | U+03BC | μ | GREEK SMALL LETTER MU |
+| `M`     | `⬀+Shift`     | Ω | U+03A9 | Ω | GREEK CAPITAL LETTER OMEGA |
+| | | | | | |
+| `,`     |               | , | U+002C | , | COMMA |
+| `,`     | `Shift`       | < | U+003C | < | LESS-THAN SIGN |
+| `,`     | `AltGr`       | ' | U+0027 | ' | APOSTROPHE |
+| `,`     | `AltGr+Shift` | ◌᷾  | U+1DFE |   | COMBINING LEFT ARROWHEAD ABOVE |
+| `,`     | `⬀`           | ≤ | U+2264 | ≤ | LESS-THAN OR EQUAL TO |
+| `,`     | `⬀+Shift`     | ≪ | U+226A | ≪ | MUCH LESS-THAN |
+| | | | | | |
+| `.`     |               | . | U+002E | . | FULL STOP |
+| `.`     | `Shift`       | > | U+003E | > | GREATER-THAN SIGN |
+| `.`     | `AltGr`       | · | U+00B7 | · | MIDDLE DOT |
+| `.`     | `AltGr+Shift` | ◌͐  | U+0350 |   | COMBINING RIGHT ARROWHEAD ABOVE |
+| `.`     | `⬀`           | ≥ | U+2265 | ≥ | GREATER-THAN OR EQUAL TO |
+| `.`     | `⬀+Shift`     | ≫ | U+226B | ≫ | MUCH GREATER-THAN |
+| | | | | | |
+| `/`     |               | / | U+002F | / | SOLIDUS |
+| `/`     | `Shift`       | ? | U+003F | ? | QUESTION MARK |
+| `/`     | `AltGr`       | ¿ | U+00BF | ¿ | INVERTED QUESTION MARK |
+| `/`     | `⬀`           | • | U+2022 | • | BULLET |
+| `/`     | `⬀+Shift`     | ◦ | U+25E6 | ◦ | WHITE BULLET |
+| | | | | | |
+| `Space` |               | ␣ | U+0020 |   | SPACE |
+| `Space` | `Shift`       | ␣ | U+0020 |   | SPACE |
+| `Space` | `AltGr`       | ⍽ | U+00A0 |   | NO-BREAK SPACE |
+| `Space` | `AltGr+Shift` | ␣  | U+0020 |   | SPACE |
+| `Space` | `⬀`           |   | U+2007 |   | FIGURE SPACE |
 | `Space` | `⬀+Shift`     | ␣ | U+0020 |   | SPACE |
 
 ## Combinations with diacritic dead keys
